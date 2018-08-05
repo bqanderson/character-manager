@@ -1,0 +1,54 @@
+/* Font weights and styles -------------------------------------------- */
+$regular: normal;
+$strong: bold;
+$italic: italic;
+
+/* Main font classes -------------------------------------------------- */
+.heading-1 {
+  @include type-setting(3);
+  font-weight: $strong;
+  color: $yellow;
+}
+
+.heading-2 {
+  @include type-setting(1);
+  font-style: $italic;
+  color: $base-1;
+  text-decoration: underline;
+}
+
+.general-content {
+  @include type-setting(0);
+}
+
+.small-content {
+  @include type-setting(-1);
+  font-style: $italic;
+  color: $base-1;
+}
+
+/* Text modifying classes --------------------------------------------- */
+.bold {
+  font-weight: $strong;
+}
+
+.italic {
+  font-style: $italic;
+}
+
+.emphasis {
+  color: $yellow;
+  font-weight: $strong;
+  font-style: $italic;
+}
+
+/* Links and Nav Text ------------------------------------------------- */
+a {
+  @include transition(color, border, background-color 0.3s ease-in-out);
+  @include type-setting(0);
+  text-decoration: none;
+  color: $yellow;
+  &:hover {
+    color: $violet;
+  }
+}

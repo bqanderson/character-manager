@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Charlatans, Vagabonds, Exemplars, and Swashbucklers';
+  subtitle = 'A simple way to store, update and manage all of your 3.5e Dungeon and Dragons characters.';
 }

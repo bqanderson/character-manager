@@ -27,7 +27,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/sass/main.scss"
             ],
             "scripts": []
           },
@@ -47,7 +47,12 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true
+              "buildOptimizer": true,
+              "stylePreprocessorOptions": {
+                "includePaths": [
+                  "../../src/sass/"
+                ]
+              }
             }
           }
         },
@@ -76,7 +81,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.scss"
+              "src/sass/main.scss"
             ],
             "scripts": [],
             "assets": [

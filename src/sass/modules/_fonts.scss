@@ -1,0 +1,44 @@
+/* mononoki regular --------------------------------------------------- */
+@font-face {
+    font-family: 'mononoki';
+    src: url($mononoki-path + 'mononoki-Regular.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+    src: url($mononoki-path + 'mononoki-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url($mononoki-path + 'mononoki-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url($mononoki-path + 'mononoki-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* mononoki bold ------------------------------------------------------ */
+@font-face {
+  font-family: 'mononoki';
+  src: url('#{$mononoki-path}mononoki-Bold.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+  src: url('#{$mononoki-path}mononoki-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('#{$mononoki-path}mononoki-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('#{$mononoki-path}mononoki-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* mononoki italic ---------------------------------------------------- */
+@font-face {
+  font-family: 'mononoki';
+  src: url('#{$mononoki-path}mononoki-Italic.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+  src: url('#{$mononoki-path}mononoki-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('#{$mononoki-path}mononoki-Italic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('#{$mononoki-path}mononoki-Italic.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* mononoki bold italic ----------------------------------------------- */
+@font-face {
+  font-family: 'mononoki';
+  src: url('#{$mononoki-path}mononoki-BoldItalic.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+  src: url('#{$mononoki-path}mononoki-BoldItalic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('#{$mononoki-path}mononoki-BoldItalic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('#{$mononoki-path}mononoki-BoldItalic.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-weight: bold;
+  font-style: italic;
+}

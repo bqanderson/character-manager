@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+$mononoki-path: "./fonts/mononoki/";
+
+/* Base Variables and Modules ---------------- */
+@import "sass/partials/base";
+
+/* Partials ---------------------------------- */
+@import "sass/partials/reset";
+@import "sass/partials/typography";
+@import "sass/partials/global";
+
+/* Layouts ----------------------------------- */
+@import "sass/layouts/heroes-component";

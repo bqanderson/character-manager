@@ -1,0 +1,48 @@
+/* Root settings ------------------------------------------------------ */
+html, body {
+  font-family: 'mononoki', Monaco, monospace;
+  font-size: 18px;
+  font-weight: $regular;
+  line-height: $base-line-height;
+  margin: 0 auto;
+  background-color: $base-3;
+  color: $base-00;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.center {
+  text-align: center;
+}
+
+.top-pad {
+  padding-top: $base-line-height;
+}
+
+.bottom-pad {
+  padding-bottom: $base-line-height;
+}
+
+.bottom-pad-md {
+  padding-bottom: $base-line-height * 2;
+}
+
+.bottom-pad-lg {
+  padding-bottom: $base-line-height * 3;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row {
+  @include row();
+}
