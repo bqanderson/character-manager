@@ -7,7 +7,8 @@ $mononoki-path: "./fonts/mononoki/";
 @import "partials/reset";
 @import "partials/typography";
 @import "partials/global";
+@import "partials/forms";
 
 /* Layouts ----------------------------------- */
 @import "layouts/header-component";
-@import "layouts/heroes-component";
+@import "layouts/character-component";

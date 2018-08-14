@@ -1,0 +1,61 @@
+// Scale the form's size slightly when its input is focused.
+// If `:focus-within` is not supported, form functionality is unaffected.
+// form:focus-within {
+//   border: 1px solid #EEE8D5;
+//   // box-shadow: 0px 0.2rem 2.5rem #EEE8D5;
+//   // transform: scale(1.0125);
+//
+//   // Remove the scaling for those who don't wanty animation.
+//   @media screen and (prefers-reduce-motion: reduce) {
+//     box-shadow: none;
+//     transform: none;
+//   }
+// }
+
+// form {
+//   font-family: 'mononoki';
+//   background-color: $base-3;
+//   @include transition(250ms all ease-in);
+//
+//   &.character-detail {
+//     height: $base-line-height * 2.5;
+//     padding: 0 $base-line-height * 0.25;
+//   }
+// }
+
+label {
+  cursor: pointer;
+  display: block;
+  @include type-setting(-1);
+  color: $base-1;
+  text-transform: uppercase;
+  @include transition(150ms all ease-in);
+
+  &:focus-within {
+    color: $yellow;
+  }
+}
+
+input[type="email"],
+input[type="text"],
+input[type="number"],
+textarea {
+  display: block;
+  appearance: none;
+  border-bottom: 1px $base-2 solid;
+  font-family: 'mononoki';
+  @include type-setting(0);
+  color: $base-00;
+  padding: 0 $base-line-height * 0.25;
+  width: 100%;
+  @include transition(150ms all ease-in);
+
+  // States
+  &:hover {
+    border-color: $base-00;
+  }
+
+  &:focus {
+    border-color: $yellow;
+  }
+}

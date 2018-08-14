@@ -1,0 +1,79 @@
+.character-detail {
+  list-style-type: none;
+  display: grid;
+  grid-gap: $base-line-height * 0.5;
+  grid-auto-rows: $base-line-height * 2;
+  padding-top: $base-line-height * 0.5;
+
+  &.two-up {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &.three-up {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  li.attributes {
+    border-bottom: solid 1px $yellow;
+    background-color: $base-2;
+    padding-left: $base-line-height * 0.5;
+    display: flex;
+    align-items: flex-end;
+
+    .descriptors {
+      color: $base-01;
+      font-weight: $strong;
+      font-style: $italic;
+      letter-spacing: 0.25rem;
+      text-transform: uppercase;
+      text-decoration-color: $base-1;
+    }
+  }
+}
+
+
+// .characters-list {
+//   margin: $base-line-height 0 $base-line-height 0;
+//   list-style-type: none;
+//   padding: 0;
+//   width: $base-line-height * 15;
+//
+//   .selected {
+//     border: 1px solid $yellow;
+//     color: $yellow;
+//   }
+//
+//   & li.character-name {
+//     cursor: pointer;
+//     position: relative;
+//     left: 0;
+//     background-color: $base-2;
+//     margin: $base-line-height * 0.5 auto;
+//     padding: 0 $base-line-height * 0.5 0 0;
+//     border: 1px solid $base-3;
+//     border-radius: 4px;
+//
+//     .badge {
+//       display: inline-block;
+//       padding: $base-line-height * 0.5;
+//       background-color: $yellow;
+//       color: $base-2;
+//       margin-right: $base-line-height * 0.5;
+//       border: 1px solid $yellow;
+//       border-right: 0;
+//       border-radius: 4px 0 0 4px;
+//       position: relative;
+//     }
+//
+//     &:hover {
+//       border: 1px solid $yellow;
+//       color: $yellow;
+//       left: .37rem;
+//     }
+//
+//     .text {
+//       position: relative;
+//       top: -3px;
+//     }
+//   }
+// }

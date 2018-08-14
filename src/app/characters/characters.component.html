@@ -1,3 +1,36 @@
-<p>
-  characters works!
-</p>
+<main class="container">
+  <h2 class="heading-2 center">Character Overview:</h2>
+  <ul class="character-detail three-up">
+    <li>
+      <label>
+        name
+        <input type="text" [(ngModel)] = "character.name" placeholder="name" />
+      </label>
+    </li>
+    <li>
+      <label>
+        class
+        <input type="text" [(ngModel)] = "character.charClass" placeholder="charClass" />
+      </label>
+    </li>
+    <li>
+      <label>
+        name
+        <input type="text" [(ngModel)] = "character.name" placeholder="name" />
+      </label>
+    </li>
+  </ul>
+  <ul class="character-detail two-up">
+    <li>
+      <label>hit points
+        <input type="number" [(ngModel)] = "character.hitPoints" placeholder="hitPoints" />
+      </label>
+    </li>
+    <li>
+      <label>
+        armor class
+        <input type="number" [(ngModel)] = "character.armorClass" placeholder="armorClass" />
+      </label>
+    </li>
+  </ul>
+</main>
